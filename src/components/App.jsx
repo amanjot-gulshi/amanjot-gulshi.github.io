@@ -1,8 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import About from "./About";
+import Intro from "./Intro";
 import Projects from "./Projects";
-import Contact from "./Contact";
 
 
 
@@ -11,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      <About/>
+      <Intro/>
       <Projects/>
       {/* <Contact/> */}
       <Footer />
