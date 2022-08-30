@@ -1,25 +1,34 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Main from "./pages/Main";
+import Resume from "./pages/Resume";
+import Project from "./pages/Project";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Header() {
 
   return (
-    
-    <div>
-      <header>
-        <Navbar bg="dark" variant="dark">
+    <BrowserRouter>
+      <header className="header">
+        <Navbar fixed='top' bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">AmanjotGulshi</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="#projects">Projects</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#resume">Resume</Nav.Link>
+            <Nav className="m-auto">
+              <Nav.Link href="/#intro">Home</Nav.Link>
+              <Nav.Link href="/#projects">Projects</Nav.Link>
+              <Nav.Link href="/#about">About</Nav.Link>
+              <Nav.Link href="/resume">Resume</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
       </header>
-    </div>
+      <Routes>
+        <Route exact path="/" element={<Main/>}/>
+        <Route path="/projects/:id" element={<Project/>}/>
+        <Route exact path="/resume" element={<Resume/>}/>
+      </Routes>
+    </BrowserRouter>
+
 
   );
 }
