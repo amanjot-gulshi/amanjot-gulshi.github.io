@@ -6,6 +6,7 @@ function Intro() {
         <div className="intro-info" id="intro">
             <h1 className="info-title">Hi I'm Amanjot,</h1>
             <h2 className="info-subtitle">a programmer/engineer.</h2>
+            <img className="intro-image" src={require('../../images/sketch.jpg')} alt="sketch"></img>
             <p className="info-description">
                 I'm a mechatronics engineer turned web developer. 
             </p>
@@ -15,7 +16,7 @@ function Intro() {
             <p className="info-description">
                 and I hope to make this a great place to showcase my work.
             </p>
-            <img className="intro-image" src={require('../images/sketch.jpg')} alt="sketch"></img>
+            
             <hr/>
         </div>
 

@@ -2,7 +2,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import React, { useEffect, useState } from "react";
 import ListGroup from 'react-bootstrap/ListGroup';
-
+import projects from "../../projects";
+import { useParams } from 'react-router-dom';
 
 function Project() {
 
@@ -26,30 +27,33 @@ function Project() {
     }
   };
 
-  const { project } = this.props.location;
-
-  console.log(project);
-
   const [tags, setTags] = useState([]);
+
+  const { id } = useParams();
+  const project = projects.find(obj => {
+    return obj.id == id;
+  })
 
   useEffect(() => {
 
-    if (project != null) {
+    if (project){
       setTags(project.tags);
     }
 
   }, [])
 
+  
+
   return (
     <div className="project" >
       <h1 className="project-title">{project.title}</h1>
       <h4 className="project-subtitle">{project.date}</h4>
-      <div className="project-images">
+      <div className="project-carousel">
         <Carousel responsive={responsive}>
           {project.images.map((image)=>(
             <img
             className="project-image"
-            src={require("../../images" + image)}
+            src={require("../../images/" + image)}
             alt="Project"
           />
           ))}
