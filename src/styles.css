@@ -63,7 +63,7 @@ footer {
 }
 
 .project-description {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 800px;
   line-height: 1.5;
 }
@@ -74,8 +74,14 @@ footer {
 }
 
 .project-image {
-  height: 400px;
-  width: 400px;
+  height: auto;
+  width: 500px;
+  object-fit: cover;
+}
+
+.project-video{
+  height: auto;
+  width: 500px;
   object-fit: cover;
 }
 
@@ -117,6 +123,10 @@ footer {
 
 /* RESUME */
 
+.exp-item{
+  margin:5px;
+}
+
 .resume {
   margin: 50px 0;
   padding-top: 50px;
@@ -132,4 +142,28 @@ footer {
 
 .work-experience{
   max-width: 600px;
+}
+
+.work{
+  margin:50px;
+}
+
+.skill {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.skill h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.skill p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }

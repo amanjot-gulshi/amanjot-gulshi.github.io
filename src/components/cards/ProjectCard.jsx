@@ -7,8 +7,6 @@ import Card from 'react-bootstrap/Card';
 
 function ProjectCard(project) {
 
-    console.log(project);
-
     return (
         <Col sm="12" md="6" lg="6" xl="4" xxl="3">
             <Card key={project.id}>
@@ -17,7 +15,7 @@ function ProjectCard(project) {
                     <Card.Title>{project.title}</Card.Title>
                     <Card.Subtitle>{project.date}</Card.Subtitle>
                     <Card.Text>
-                        {project.description.substring(0, 200)}...
+                        {project.description[0].substring(0, 200)}...
                     </Card.Text>
                     <ListGroup horizontal className="project-tags">
                         {project.tags.map((tag) => (
@@ -27,7 +25,7 @@ function ProjectCard(project) {
                     <Link to={{
                         pathname: `/projects/${project.id}`
                     }}>
-                        <Button className="project-link" variant="secondary">
+                        <Button className="project-link" variant="light">
                             View Project</Button>
                     </Link>
 

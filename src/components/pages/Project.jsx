@@ -11,10 +11,15 @@ function Project() {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 3
+      items: 5
+    },
+    largeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 3000, min: 2000 },
+      items: 4
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 2000, min: 1024 },
       items: 3
     },
     tablet: {
@@ -31,18 +36,18 @@ function Project() {
 
   const { id } = useParams();
   const project = projects.find(obj => {
-    return obj.id == id;
+    return obj.id = id;
   })
 
   useEffect(() => {
 
-    if (project){
+    if (project) {
       setTags(project.tags);
     }
 
   }, [])
 
-  
+
 
   return (
     <div className="project" >
@@ -50,17 +55,28 @@ function Project() {
       <h4 className="project-subtitle">{project.date}</h4>
       <div className="project-carousel">
         <Carousel responsive={responsive}>
-          {project.images.map((image)=>(
+          {project.images.map((image) => (
             <img
-            className="project-image"
-            src={require("../../images/" + image)}
-            alt="Project"
-          />
+              className="project-image"
+              src={require("../../images/" + image)}
+              alt="Project"
+            />
+
           ))}
+          <video loop autoPlay controls
+            className="project-video">
+            <source
+              src={require("../../videos/" + project.videos)}
+              type="video/mp4"
+            />
+          </video>
         </Carousel>
 
       </div>
-      <p className="project-description">{project.description}</p>
+      {project.description.map((item) => (
+        <p className="project-description">{item}</p>
+      ))}
+
       <ListGroup horizontal className="project-tags">
         {tags.map((tag) => (
           <ListGroup.Item>{tag}</ListGroup.Item>

@@ -1,8 +1,34 @@
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import ListGroup from 'react-bootstrap/ListGroup';
-
+import { softwareSkills, hardwareSkills } from "../../skills";
+import workList from "../../work";
+import SkillCard from "../cards/SkillCard";
+import WorkCard from "../cards/WorkCard";
 
 function Resume() {
+
+    const [softSkills, setSoftSkills] = useState([]);
+    const [hardSkills, setHardSkills] = useState([]);
+    const [work, setWork] = useState([]);
+
+    useEffect(() => {
+        if (softwareSkills != null) {
+            setSoftSkills(softwareSkills);
+        }
+
+        if (hardwareSkills != null) {
+            setHardSkills(hardwareSkills);
+        }
+
+        if (workList != null) {
+            setWork(workList);
+        }
+
+        // console.log(softSkills);
+        // console.log(hardSkills);
+        // console.log(work);
+    }, [])
+
     return (
         <div className="resume">
             <h1 className="resume-title">Resume</h1>
@@ -12,41 +38,48 @@ function Resume() {
                     <Col>
                         <div className="software-skills">
                             <h4>Software</h4>
-                            <ListGroup>
-                                <ListGroup.Item> Python </ListGroup.Item>
-                                <ListGroup.Item> Java </ListGroup.Item>
-                                <ListGroup.Item> Web Development </ListGroup.Item>
-                                <ListGroup.Item> C++ </ListGroup.Item>
-                                <ListGroup.Item> Robotic Operating System </ListGroup.Item>
-                                <ListGroup.Item> Github </ListGroup.Item>
-                            </ListGroup>
+                            {softSkills.map((skill) => (
+                                <SkillCard
+                                    name={skill.name}
+                                    experience={skill.experience}
+                                />
+                            ))}
 
                         </div>
                     </Col>
                     <Col>
                         <div className="hardware-skills">
                             <h4>Hardware</h4>
-                            <ListGroup>
-                                <ListGroup.Item> Computer Aided Design </ListGroup.Item>
-                                <ListGroup.Item> Rapid Prototyping </ListGroup.Item>
-                                <ListGroup.Item> Microcontrollers </ListGroup.Item>
-                                <ListGroup.Item> PID Motor Control </ListGroup.Item>
-                            </ListGroup>
+                            {hardSkills.map((skill) => (
+                                <SkillCard
+                                    name={skill.name}
+                                    experience={skill.experience}
+                                />
+                            ))}
 
                         </div>
                     </Col>
                 </Row>
 
             </Container>
+            <hr/>
 
             <div className="work-experience resume-section">
                 <h2>Work</h2>
-                <ListGroup>
-                    <ListGroup.Item> Capstone Research and Development </ListGroup.Item>
-                    <ListGroup.Item> Korechi Innovations Inc </ListGroup.Item>
-                    <ListGroup.Item> NSERC Undergraduate Research </ListGroup.Item>
-                </ListGroup>
+
+                {work.map((job) => (
+                    <WorkCard
+                        className="work"
+                        title={job.title}
+                        company={job.company}
+                        date={job.date}
+                        description={job.description}
+                    />
+                    
+                ))}
+
             </div>
+            {/* <hr/> */}
             <div className="education resume-section">
                 <h2>Education</h2>
                 <h4>University of Ontario Institute of Technology</h4>
@@ -54,7 +87,7 @@ function Resume() {
                 <h6>2016 - 2022</h6>
             </div>
 
-        </div>
+        </div >
     )
 }
 
