@@ -54,7 +54,7 @@ function Project() {
       <h1 className="project-title">{project.title}</h1>
       <h4 className="project-subtitle">{project.date}</h4>
       <div className="project-carousel">
-        <Carousel responsive={responsive}>
+        <Carousel responsive={responsive} infinite={true}>
           {project.images.map((image) => (
             <img
               className="project-image"
@@ -63,16 +63,16 @@ function Project() {
             />
 
           ))}
-          {project.videos.map((video)=>(
+          {project.videos.map((video) => (
             <video loop controls
-            className="project-video">
-            <source
-              src={require("../../videos/" + video)}
-              type="video/mp4"
-            />
-          </video>
+              className="project-video">
+              <source
+                src={require("../../videos/" + video)}
+                type="video/mp4"
+              />
+            </video>
           ))}
-          
+
         </Carousel>
 
       </div>
@@ -80,11 +80,21 @@ function Project() {
         <p className="project-description">{item}</p>
       ))}
 
+      <div className="external-link">
+        <h4>External Links:</h4>
+        {project.links.map((link) => (
+          <a href={link}>{link}</a>
+        ))}
+
+      </div>
+
       <ListGroup horizontal className="project-tags">
         {tags.map((tag) => (
           <ListGroup.Item>{tag}</ListGroup.Item>
         ))}
       </ListGroup>
+
+
     </div>
   );
 }
