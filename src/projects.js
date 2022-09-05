@@ -9,10 +9,16 @@ const projects = [
             "home_office_test.mp4"
         ],
         description: [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "This was our final year Capstone project conducted under the supervision and guidance of Dr. Jaho Seo. The goal of this project was to designand develop a Multi-Agent Mobile Simultaneous Localisation and Mapping (SLAM) Platform that would allow for the exploration of unknownenvironments without putting the operators in danger. This includes collapsed or unstable buildings as well as any other kind of terrain.",
+            "The design consists of a premade RC crawler, reduced suspension travel for flat ground testing, a Kinect 360 module for vision sensing anda Raspberry Pi 4 to control the robot. This is accompanied by 2 batteries; one for powering the computer and sensor, while the other powers the crawler's motors. The batteries and Raspberry Pi are enclosed in 3D printed boxes while the Kinect module is mounted to a custom 3D printed mount that allows for it to be securely snapped in. The batteries allow for a tetherless platform that is self-contained.",
+            "The platform is operated using an RC remote which drives it around while it carries out its mapping functions. The Raspberry Pi 4 is runningRobotic Operating System (ROS) Noetic on Ubuntu 20.04 utilizing the libfreenect driver to interface with the Kinect 360 and the rtabmap_rosrospackage to perform the data recording and mapping. This library is using Real-Time Appearance-Based (RTAB) Mapping, which utilizes the RGB camera of the Kinect to take several images as the camera moves. The library then stitches all the images together in real-time.",
+            "The goal is to have two separate platforms exploring an environment while carrying out mapping in their own individual areas, to come togetherat the end, and merge their separate maps together. This can be accomplished so long as both platforms have a common reference point that tiestheir maps together. A demonstration of which, can be seen using the external links below."
         ],
-        links: ["https://drive.google.com/file/d/1VzBbWRcxWl64KOu5FOsnjSJZ6pDPDqfz/view?usp=sharing"],
+        links: [
+            "https://drive.google.com/file/d/1VzBbWRcxWl64KOu5FOsnjSJZ6pDPDqfz/view?usp=sharing",
+            "http://wiki.ros.org/rtabmap_ros",
+            "http://wiki.ros.org/noetic/Installation"
+        ],
         tags: ["Python", "ROS", "SLAM", "Mechatronics"]
 
     },
