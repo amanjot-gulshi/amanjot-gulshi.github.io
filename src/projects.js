@@ -40,7 +40,7 @@ const projects = [
     },
     {
         id: 3,
-        title: "Rehabilitation of Musculoskeletal Disorder",
+        title: "Development of a Robotic System for Rehabilitation of Musculoskeletal Disorder",
         date: "May 2018 - August 2018",
         thumbnail: "poster.png",
         images: ["poster.png", "pose1.jpg", "pose2.jpg", "pose3.jpg"],
