@@ -36,7 +36,7 @@ function Project() {
 
   const { id } = useParams();
   const project = projects.find(obj => {
-    return obj.id = id;
+    return obj.id == id;
   })
 
   useEffect(() => {
@@ -63,13 +63,16 @@ function Project() {
             />
 
           ))}
-          <video loop autoPlay controls
+          {project.videos.map((video)=>(
+            <video loop controls
             className="project-video">
             <source
-              src={require("../../videos/" + project.videos)}
+              src={require("../../videos/" + video)}
               type="video/mp4"
             />
           </video>
+          ))}
+          
         </Carousel>
 
       </div>
