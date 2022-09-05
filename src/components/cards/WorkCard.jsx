@@ -11,7 +11,6 @@ function WorkCard(work){
             {work.description.map((item)=>(
                 <p className="work-description">{item}</p>
             ))}
-            <hr/>
 
         </div>
     )

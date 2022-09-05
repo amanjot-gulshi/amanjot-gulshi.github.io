@@ -2,26 +2,26 @@ const projects = [
     {
         id: 1,
         title: "Design and Development of a Multi-Agent Mobile SLAM Platform",
-        date:"September 2021 - April 2022",
-        thumbnail:"crawler.PNG",
-        images:["crawler.PNG", "live-view.PNG", "depth-view.PNG", "SIRC.png", "SIRC-MAP.png"],
-        videos:[
+        date: "September 2021 - April 2022",
+        thumbnail: "crawler.PNG",
+        images: ["crawler.PNG", "live-view.PNG", "depth-view.PNG", "SIRC.png", "SIRC-MAP.png"],
+        videos: [
             "home_office_test.mp4"
         ],
         description: [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         ],
-        links: [],
+        links: ["https://drive.google.com/file/d/1VzBbWRcxWl64KOu5FOsnjSJZ6pDPDqfz/view?usp=sharing"],
         tags: ["Python", "ROS", "SLAM", "Mechatronics"]
 
     },
     {
         id: 2,
         title: "Foresight",
-        date:"February 2020",
-        thumbnail:"foresight1.png",
-        images:["foresight1.png", "foresight2.png", "foresight3.png"],
+        date: "February 2020",
+        thumbnail: "foresight1.png",
+        images: ["foresight1.png", "foresight2.png", "foresight3.png"],
         videos: [],
         description: [
             "This device uses the Google Cloud Vision and Text To Speech APIs to identify obstacles in the path of someone using the device. Foresight is intended to be worn as a guide for the visually impaired so that they can feel safer travelling on their own withoutthe need of a caretaker or a white cane.For the 2020 MakeUofT Make-a-thon competion, my team and I had 24 hours to come up with a project to be judged at the end of the time limit.",
@@ -35,18 +35,21 @@ const projects = [
     {
         id: 3,
         title: "Rehabilitation of Musculoskeletal Disorder",
-        date:"May 2018 - August 2018",
-        thumbnail:"poster.png",
-        images:["poster.png", "pose1.jpg", "pose2.jpg", "pose3.jpg"],
+        date: "May 2018 - August 2018",
+        thumbnail: "poster.png",
+        images: ["poster.png", "pose1.jpg", "pose2.jpg", "pose3.jpg"],
         videos: ["bilateral_test.mp4", "Moving_Robot.mp4"],
         description: [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             // "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         ],
-        links: [],
+        links: [
+            "https://shared.ontariotechu.ca/shared/department/research/documents/srs-2018/feas---hm---amanjot-gulshi.pdf",
+            "https://biomechatronics.ca/team/#two"
+        ],
         tags: ["C++", "ROS", "Robotics", "Simulation", "Research"]
     },
-   
+
 ];
 
 export default projects;

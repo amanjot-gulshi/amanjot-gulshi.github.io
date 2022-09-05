@@ -47,8 +47,6 @@ function Project() {
 
   }, [])
 
-
-
   return (
     <div className="project" >
       <h1 className="project-title">{project.title}</h1>
@@ -83,8 +81,9 @@ function Project() {
       <div className="external-link">
         <h4>External Links:</h4>
         {project.links.map((link) => (
-          <a href={link}>{link}</a>
+          <a href={link}>{link}<br/></a>
         ))}
+
 
       </div>
 
@@ -93,8 +92,6 @@ function Project() {
           <ListGroup.Item>{tag}</ListGroup.Item>
         ))}
       </ListGroup>
-
-
     </div>
   );
 }

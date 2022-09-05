@@ -32,8 +32,9 @@ function Resume() {
     return (
         <div className="resume">
             <h1 className="resume-title">Resume</h1>
-            <h2>Skills</h2>
-            <Container className="skills-container resume-section">
+
+            <Container className="skills-container">
+                <h2>Skills</h2>
                 <Row>
                     <Col>
                         <div className="software-skills">
@@ -62,11 +63,10 @@ function Resume() {
                 </Row>
 
             </Container>
-            <hr/>
+            <hr />
 
-            <div className="work-experience resume-section">
+            <div className="work-experience">
                 <h2>Work</h2>
-
                 {work.map((job) => (
                     <WorkCard
                         className="work"
@@ -75,16 +75,15 @@ function Resume() {
                         date={job.date}
                         description={job.description}
                     />
-                    
                 ))}
-
             </div>
-            {/* <hr/> */}
-            <div className="education resume-section">
-                <h2>Education</h2>
+
+            <div className="education">
+                {/* <h2>Education</h2>
                 <h4>University of Ontario Institute of Technology</h4>
                 <h5>Bachelors of Engineering in Mechatronics</h5>
-                <h6>2016 - 2022</h6>
+                <h6>2016 - 2022</h6> */}
+                <img className="degree-image" src={require("../../images/degree.png")} alt="Engineering Degree"></img>
             </div>
 
         </div >
