@@ -1,18 +1,22 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card'
 
 function WorkCard(work){
 
     return (
-        <div className="work">
-            
-            <h3 className="work-title">{work.title}</h3>
-            <h4 className="work-company">{work.company}</h4>
-            <h5 className="work-date">{work.date}</h5>
-            {work.description.map((item)=>(
-                <p className="work-description">{item}</p>
+        <Card className="work">
+            <Card.Body>
+                <Card.Title className="work-title">{work.title}</Card.Title>
+                <Card.Subtitle className="work-company">{work.company}</Card.Subtitle>
+                <Card.Subtitle className="work-date">{work.date}</Card.Subtitle>
+                {work.description.map((item)=>(
+                <Card.Text className="work-description">{item}</Card.Text>
             ))}
+            </Card.Body>
+            
+            
 
-        </div>
+        </Card>
     )
 }
 

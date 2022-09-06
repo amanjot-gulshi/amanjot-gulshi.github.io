@@ -14,7 +14,7 @@ function Intro() {
                 This website is my gateway into the world of web development
             </p>
             <p className="info-description">
-                and I hope to make this a great place to showcase my work.
+                and I hope to make this a great place to showcase my work!
             </p>
             
             <hr/>

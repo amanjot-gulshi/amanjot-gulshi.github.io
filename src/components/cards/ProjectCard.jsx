@@ -17,7 +17,7 @@ function ProjectCard(project) {
                     <Card.Text>
                         {project.description[0].substring(0, 200)}...
                     </Card.Text>
-                    <ListGroup horizontal className="project-tags">
+                    <ListGroup horizontal className="projects-tags">
                         {project.tags.map((tag) => (
                             <ListGroup.Item className="project-tag" key={tag}>{tag}</ListGroup.Item>
                         ))}

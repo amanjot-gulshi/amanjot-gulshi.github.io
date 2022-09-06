@@ -24,13 +24,10 @@ function Resume() {
             setWork(workList);
         }
 
-        // console.log(softSkills);
-        // console.log(hardSkills);
-        // console.log(work);
     }, [])
 
     return (
-        <div className="resume">
+        <div id="resume">
             <h1 className="resume-title">Resume</h1>
 
             <Container className="skills-container">
@@ -65,7 +62,8 @@ function Resume() {
             </Container>
             <hr />
 
-            <div className="work-experience">
+            <div id="work-experience">
+                
                 <h2>Work</h2>
                 {work.map((job) => (
                     <WorkCard
@@ -78,11 +76,8 @@ function Resume() {
                 ))}
             </div>
 
-            <div className="education">
-                {/* <h2>Education</h2>
-                <h4>University of Ontario Institute of Technology</h4>
-                <h5>Bachelors of Engineering in Mechatronics</h5>
-                <h6>2016 - 2022</h6> */}
+            <div id="education">
+                
                 <img className="degree-image" src={require("../../images/degree.png")} alt="Engineering Degree"></img>
             </div>
 
