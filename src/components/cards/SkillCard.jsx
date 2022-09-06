@@ -3,17 +3,18 @@ import Button from 'react-bootstrap/Button';
 
 function SkillCard(skill) {
 
-  const [isExpanded, setExpanded] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function expand() {
-    setExpanded(!isExpanded);
+    setIsOpen(!isOpen);
   }
 
   return (
-    <div className="skill">
+    <div className={"skill " + (isOpen ? "expand" : "")}>
+
       <Button variant="light" onClick={expand}>
         <h1>{skill.name}</h1>
-        {isExpanded && (
+        {isOpen && (
           <div>
             <ul>
               {skill.experience.map((item) => (
@@ -25,7 +26,6 @@ function SkillCard(skill) {
             </ul>
           </div>
         )}
-
       </Button>
 
     </div>
