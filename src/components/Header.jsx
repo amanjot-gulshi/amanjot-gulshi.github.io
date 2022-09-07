@@ -4,12 +4,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Main from "./pages/Main";
 import Resume from "./pages/Resume";
 import Project from "./pages/Project";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function Header() {
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <header className="header">
         <Navbar fixed='top' bg="dark" variant="dark">
           <Container>
@@ -27,7 +27,7 @@ function Header() {
         <Route path="/projects/:id" element={<Project/>}/>
         <Route exact path="/resume" element={<Resume/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
 
   );
