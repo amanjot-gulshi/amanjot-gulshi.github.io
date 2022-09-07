@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 #MEDIA
-/src/images/**
-/src/videos/**
+# /src/images/**
+# /src/videos/**
