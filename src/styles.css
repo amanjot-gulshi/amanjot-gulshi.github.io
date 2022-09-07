@@ -116,6 +116,8 @@ footer {
 .projects-row{
   width: 100%;
   justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .projects-thumbnail {

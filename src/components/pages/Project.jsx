@@ -89,7 +89,7 @@ function Project() {
 
       <ListGroup horizontal className="project-tags">
         {tags.map((tag) => (
-          <ListGroup.Item>{tag}</ListGroup.Item>
+          <ListGroup.Item key={tag}>{tag}</ListGroup.Item>
         ))}
       </ListGroup>
     </div>
