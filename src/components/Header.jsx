@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Main from "./pages/Main";
-import Resume from "./pages/Resume";
 import Project from "./pages/Project";
 import {Routes, Route } from "react-router-dom";
 
@@ -25,7 +24,6 @@ function Header() {
       <Routes>
         <Route exact path="/" element={<Main />} />
         <Route path="/projects/:id" element={<Project />} />
-        {/* <Route exact path="/resume" element={<Resume />} /> */}
       </Routes>
     </div>
 
