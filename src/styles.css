@@ -200,7 +200,7 @@ z-index: 2;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
   width: auto;
-  margin: 16px;
+  margin: 30px;
 }
 .work-title {
   font-size: 1.5em;
@@ -216,7 +216,7 @@ z-index: 2;
 
 .work-date {
   font-size: 1.3em;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
   color: grey;
 }
 
