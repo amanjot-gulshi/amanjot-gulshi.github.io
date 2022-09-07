@@ -144,6 +144,11 @@ footer {
   padding-top: 50px;
 }
 
+.resume-division{
+  width: 600px;
+  margin: 50px auto;
+}
+
 .skill {
   background: #fff;
   border-radius: 7px;

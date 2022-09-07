@@ -1,6 +1,7 @@
 import Intro from "../sections/Intro";
 import Projects from "../sections/Projects";
 import About from "../sections/About";
+import Resume from "./Resume";
 
 
 function Main() {
@@ -11,6 +12,7 @@ function Main() {
       <Intro/>
       <Projects/>
       <About/>
+      <Resume />
       
     </div>
   );

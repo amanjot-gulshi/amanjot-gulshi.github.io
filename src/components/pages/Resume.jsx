@@ -60,10 +60,10 @@ function Resume() {
                 </Row>
 
             </Container>
-            <hr />
+            <hr className="resume-division"/>
 
             <div id="work-experience">
-                
+
                 <h2>Work</h2>
                 {work.map((job) => (
                     <WorkCard
@@ -75,9 +75,9 @@ function Resume() {
                     />
                 ))}
             </div>
-
+                    <hr className="resume-division"/>
             <div id="education">
-                
+                <h2>Education</h2>
                 <img className="degree-image" src={require("../../images/degree.png")} alt="Engineering Degree"></img>
             </div>
 
