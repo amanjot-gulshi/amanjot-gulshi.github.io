@@ -78,7 +78,7 @@ function Resume() {
                     <hr className="resume-division"/>
             <div id="education">
                 <h2>Education</h2>
-                <img className="degree-image" src={require("../../images/degree.png")} alt="Engineering Degree"></img>
+                <img className="degree-image" src="https://gitportfoliobucket.s3.us-east-2.amazonaws.com/degree.png" alt="Engineering Degree"></img>
             </div>
 
         </div >
