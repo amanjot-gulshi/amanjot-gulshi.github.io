@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import projects from "../../projects";
 import { useParams } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
@@ -35,8 +35,6 @@ function Project() {
     }
   };
 
-  const [tags, setTags] = useState([]);
-
   const { id } = useParams();
   const project = projects.find(obj => {
     return obj.id == id;
@@ -44,9 +42,7 @@ function Project() {
 
   useEffect(() => {
 
-    if (project) {
-      setTags(project.tags);
-    }
+    window.scrollTo({top: 0, behavior: 'smooth'});
 
   }, [])
 
@@ -92,7 +88,7 @@ function Project() {
 
       <Row className="project-tags">
         {project.tags.map((tag) => (
-          <Col  key={tag}>
+          <Col key={tag}>
             <Badge pill bg="secondary">{tag}</Badge>
           </Col>
         ))}
