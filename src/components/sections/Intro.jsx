@@ -6,7 +6,7 @@ function Intro() {
         <div className="intro-info" id="intro">
             <h1 className="info-title">Hi I'm Amanjot,</h1>
             <h2 className="info-subtitle">a programmer/engineer.</h2>
-            <img className="intro-image" src={require('../../images/sketch.jpg')} alt="sketch"></img>
+            <img className="intro-image" src="https://gitportfoliobucket.s3.us-east-2.amazonaws.com/sketch.jpg" alt="sketch"></img>
             <p className="info-description">
                 I'm a mechatronics engineer turned web developer. 
             </p>
