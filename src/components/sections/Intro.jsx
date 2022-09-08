@@ -17,7 +17,7 @@ function Intro() {
                 and I hope to make this a great place to showcase my work!
             </p>
             <a className="footer-link" href="https://www.linkedin.com/in/amanjot-gulshi/"><i className="fa-brands fa-linkedin fa-xl"></i></a>
-            <a className="footer-link" href="https://github.com/AmanjotG"><i className="fa-brands fa-github fa-xl"></i></a>
+            <a className="footer-link" href="https://github.com/amanjot-gulshi"><i className="fa-brands fa-github fa-xl"></i></a>
             
             <hr/>
         </div>
