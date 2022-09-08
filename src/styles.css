@@ -94,8 +94,9 @@ footer {
 }
 
 .project-tags {
-  margin: 50px 0;
+  margin: 50px auto;
   justify-content: center;
+  width: 800px;
 }
 
 /* MULTIPLE PROJECTS */

@@ -1,9 +1,10 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Row from 'react-bootstrap/Row';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge';
 
 function ProjectCard(project) {
 
@@ -17,11 +18,13 @@ function ProjectCard(project) {
                     <Card.Text>
                         {project.description[0].substring(0, 200)}...
                     </Card.Text>
-                    <ListGroup horizontal className="projects-tags">
+                    <Row>
                         {project.tags.map((tag) => (
-                            <ListGroup.Item className="project-tag" key={tag}>{tag}</ListGroup.Item>
+                            <Col className="project-tag" key={tag}>
+                                <Badge pill bg="secondary">{tag}</Badge>
+                                </Col>
                         ))}
-                    </ListGroup>
+                    </Row>
                     <Link to={{
                         pathname: `/projects/${project.id}`
                     }}>

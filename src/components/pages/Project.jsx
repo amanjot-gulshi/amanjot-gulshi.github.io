@@ -1,9 +1,12 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import React, { useEffect, useState } from "react";
-import ListGroup from 'react-bootstrap/ListGroup';
 import projects from "../../projects";
 import { useParams } from 'react-router-dom';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Badge from 'react-bootstrap/Badge';
+
 
 function Project() {
 
@@ -81,17 +84,19 @@ function Project() {
       <div className="external-link">
         <h4>External Links:</h4>
         {project.links.map((link) => (
-          <a href={link}>{link}<br/></a>
+          <a href={link}>{link}<br /></a>
         ))}
 
 
       </div>
 
-      <ListGroup horizontal className="project-tags">
-        {tags.map((tag) => (
-          <ListGroup.Item key={tag}>{tag}</ListGroup.Item>
+      <Row className="project-tags">
+        {project.tags.map((tag) => (
+          <Col  key={tag}>
+            <Badge pill bg="secondary">{tag}</Badge>
+          </Col>
         ))}
-      </ListGroup>
+      </Row>
     </div>
   );
 }
