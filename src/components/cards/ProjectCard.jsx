@@ -11,7 +11,7 @@ function ProjectCard(project) {
     return (
         <Col sm="12" md="6" lg="6" xl="4" xxl="3">
             <Card key={project.id}>
-                <Card.Img className="projects-thumbnail" variant="top" src={require("../../images/" + project.thumbnail)} />
+                <Card.Img className="projects-thumbnail" variant="top" src={ project.thumbnail} />
                 <Card.Body>
                     <Card.Title>{project.title}</Card.Title>
                     <Card.Subtitle>{project.date}</Card.Subtitle>

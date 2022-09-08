@@ -3,10 +3,15 @@ const projects = [
         id: 1,
         title: "Design and Development of a Multi-Agent Mobile SLAM Platform",
         date: "September 2021 - April 2022",
-        thumbnail: "crawler.PNG",
-        images: ["crawler.PNG", "live-view.PNG", "depth-view.PNG", "SIRC.png", "SIRC-MAP.png"],
+        thumbnail: "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/crawler.PNG",
+        images: [
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/crawler.PNG",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/live-view.PNG",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/depth-view.PNG",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/SIRC.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/SIRC-MAP.png"],
         videos: [
-            "home_office_test.mp4"
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/home_office_test.mp4"
         ],
         description: [
             "This was our final year Capstone project conducted under the supervision and guidance of Dr. Jaho Seo. The goal of this project was to designand develop a Multi-Agent Mobile Simultaneous Localisation and Mapping (SLAM) Platform that would allow for the exploration of unknownenvironments without putting the operators in danger. This includes collapsed or unstable buildings as well as any other kind of terrain.",
@@ -26,8 +31,11 @@ const projects = [
         id: 2,
         title: "Foresight",
         date: "February 2020",
-        thumbnail: "foresight1.png",
-        images: ["foresight1.png", "foresight2.png", "foresight3.png"],
+        thumbnail: "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/foresight1.png",
+        images: [
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/foresight1.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/foresight2.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/foresight3.png"],
         videos: [],
         description: [
             "This device uses the Google Cloud Vision and Text To Speech APIs to identify obstacles in the path of someone using the device. Foresight is intended to be worn as a guide for the visually impaired so that they can feel safer travelling on their own withoutthe need of a caretaker or a white cane.For the 2020 MakeUofT Make-a-thon competion, my team and I had 24 hours to come up with a project to be judged at the end of the time limit.",
@@ -42,9 +50,15 @@ const projects = [
         id: 3,
         title: "Development of a Robotic System for Rehabilitation of Musculoskeletal Disorder",
         date: "May 2018 - August 2018",
-        thumbnail: "poster.png",
-        images: ["poster.png", "pose1.jpg", "pose2.jpg", "pose3.jpg"],
-        videos: ["bilateral_test.mp4", "Moving_Robot.mp4"],
+        thumbnail: "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/poster.png",
+        images: [
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/poster.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/pose1.jpg",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/pose2.jpg",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/pose3.jpg"],
+        videos: [
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/bilateral_test.mp4",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/Moving_Robot.mp4"],
         description: [
             "I worked on this project during my NSERC Undergraduate Research term in 2018 under the supervision of Dr. Carlos Rossa. The goal of thisresearch project was to develop a system for the rehabilitation of musculoskeletal disorders in patients with the help of robotic arms. This allows for a two phase program for patients that starts off with therapy at a clinic with a programmed 6 Degree of Freedom (DOF) robotic arm and transitions toat-home therapy with a 3 DOF haptic controller that can be carried out with sessions over the internet with a physician.",
             "Development actually began with Phase 2 of the project where a patient and physician are able to communicate over the internet withtheir respective haptic controllers. We are using the Novint Falcon Haptic Controller with has 3 DOF and can provide a decent amount offorce feedback to the user. In order to sync two controllers together such that they move in unison, bilateral teleoperation must be implemented. This is done by sending the position of the first controller to the second, and using inverse-kinematics to bring the end-effector of the second manipulator to the exact same position as the first, by way of Proportional Integral Derivative (PID) control. This can be seen in the video above.",

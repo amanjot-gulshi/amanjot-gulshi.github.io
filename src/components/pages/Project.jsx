@@ -59,7 +59,7 @@ function Project() {
           {project.images.map((image) => (
             <img
               className="project-image"
-              src={require("../../images/" + image)}
+              src={image}
               alt="Project"
             />
 
@@ -68,7 +68,7 @@ function Project() {
             <video loop controls
               className="project-video">
               <source
-                src={require("../../videos/" + video)}
+                src={video}
                 type="video/mp4"
               />
             </video>
