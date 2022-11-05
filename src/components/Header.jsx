@@ -26,10 +26,6 @@ function Header() {
         <Route path="/projects/:id" element={<Project />} />
       </Routes>
     </div>
-
-
-
-
   );
 }
 
