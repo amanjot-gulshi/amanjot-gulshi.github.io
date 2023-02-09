@@ -60,8 +60,8 @@ const projects = [
             "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/bilateral_test.mp4",
             "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/Moving_Robot.mp4"],
         description: [
-            "I worked on this project during my NSERC Undergraduate Research term in 2018 under the supervision of Dr. Carlos Rossa. The goal of thisresearch project was to develop a system for the rehabilitation of musculoskeletal disorders in patients with the help of robotic arms. This allows for a two phase program for patients that starts off with therapy at a clinic with a programmed 6 Degree of Freedom (DOF) robotic arm and transitions toat-home therapy with a 3 DOF haptic controller that can be carried out with sessions over the internet with a physician.",
-            "Development actually began with Phase 2 of the project where a patient and physician are able to communicate over the internet withtheir respective haptic controllers. We are using the Novint Falcon Haptic Controller with has 3 DOF and can provide a decent amount offorce feedback to the user. In order to sync two controllers together such that they move in unison, bilateral teleoperation must be implemented. This is done by sending the position of the first controller to the second, and using inverse-kinematics to bring the end-effector of the second manipulator to the exact same position as the first, by way of Proportional Integral Derivative (PID) control. This can be seen in the video above.",
+            "I worked on this project during my NSERC Undergraduate Research term in 2018 under the supervision of Dr. Carlos Rossa. The goal of this research project was to develop a system for the rehabilitation of musculoskeletal disorders in patients with the help of robotic arms. This allows for a two phase program for patients that starts off with therapy at a clinic with a programmed 6 Degree of Freedom (DOF) robotic arm and transitions toat-home therapy with a 3 DOF haptic controller that can be carried out with sessions over the internet with a physician.",
+            "Development actually began with Phase 2 of the project where a patient and physician are able to communicate over the internet withtheir respective haptic controllers. We are using the Novint Falcon Haptic Controller with has 3 DOF and can provide a decent amount of force feedback to the user. In order to sync two controllers together such that they move in unison, bilateral teleoperation must be implemented. This is done by sending the position of the first controller to the second, and using inverse-kinematics to bring the end-effector of the second manipulator to the exact same position as the first, by way of Proportional Integral Derivative (PID) control. This can be seen in the video above.",
             "Once that was completed, controlling the 6 DOF arm was the next goal. Unfortunately, this could not be completed due to time constraints, but the experience I gained during this research term was most valuable and I thank Dr. Rossa for giving me the chance to work under him."
         ],
         links: [
@@ -69,6 +69,30 @@ const projects = [
             "https://biomechatronics.ca/team/#two"
         ],
         tags: ["C++", "ROS", "Robotics", "Simulation", "Research"]
+    },
+    {
+        id: 4,
+        title: "SurveyApp",
+        date: "2023",
+        thumbnail: "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/mine.png",
+        images: [
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/mine.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/profile.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/registration.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/surveys.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/answers.png",
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/creating.png"
+        ],
+        videos: [
+            "https://gitportfoliobucket.s3.us-east-2.amazonaws.com/SurveyApp+Demo.mp4"
+        ],
+        description: [
+            "This project was to get better at working with a full stack application that incorporated back end development through Django and front end development using React. This application made use of Bootstrap as well as Redux for state management across the entire application.",
+        ],
+        links: [
+            "https://github.com/amanjot-gulshi/SurveyApp",
+        ],
+        tags: ["JavaScript", "HTML5", "CSS3", "React", "SQL", "Django", "AWS S3"]
     },
 
 ];
